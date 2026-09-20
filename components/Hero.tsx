@@ -1,18 +1,27 @@
 import Image from "next/image";
-import heroImage from "@/public/images/hero-cafe.png";
+import heroImage from "@/public/images/hero-background-v2.png";
 
 export function Hero() {
   return (
-    <section id="hero" className="relative flex min-h-svh items-center overflow-hidden px-5 pb-16 pt-40 sm:px-8 md:pt-28 lg:px-12">
-      <div aria-hidden="true" className="absolute -right-24 top-36 h-[34rem] w-[27rem] rounded-t-full bg-cream-deep/70 md:right-[6%]" />
+    <section id="hero" className="relative flex min-h-svh items-center overflow-hidden px-5 pb-20 pt-40 text-cream sm:px-8 md:pt-32 lg:px-12">
+      <Image
+        src={heroImage}
+        alt="Светлый зал кофейни с деревянной мебелью, растениями и чашкой кофе"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[62%_center]"
+      />
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-r from-coffee via-coffee/80 to-coffee/10" />
+      <div aria-hidden="true" className="absolute inset-0 bg-gradient-to-t from-coffee/50 via-transparent to-coffee/20" />
 
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
+      <div className="relative mx-auto w-full max-w-7xl">
         <div className="max-w-3xl">
-          <p className="mb-6 text-sm font-medium text-terracotta">Кофе, выпечка и время для себя</p>
-          <h1 className="font-display text-5xl font-medium leading-[1.02] tracking-tight sm:text-7xl lg:text-8xl">
+          <p className="mb-6 text-sm font-medium text-cream-deep">Кофе, выпечка и время для себя</p>
+          <h1 className="font-display text-5xl font-medium leading-[1.02] tracking-tight sm:text-7xl lg:text-[5.5rem]">
             Место, где начинается тёплый день
           </h1>
-          <p className="mt-7 max-w-xl text-lg leading-8 text-coffee/70">
+          <p className="mt-7 max-w-xl text-lg leading-8 text-cream/80">
             Каждое утро здесь пахнет свежим кофе и домашней выпечкой.
           </p>
           <a
@@ -21,17 +30,6 @@ export function Hero() {
           >
             Посмотреть меню
           </a>
-        </div>
-
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-t-full rounded-b-[2.5rem] bg-cream-deep shadow-soft">
-          <Image
-            src={heroImage}
-            alt="Зал кофейни «Тёплый Дом» в тёплом солнечном свете"
-            fill
-            priority
-            sizes="(min-width: 1024px) 448px, (min-width: 640px) 60vw, 90vw"
-            className="object-cover"
-          />
         </div>
       </div>
     </section>

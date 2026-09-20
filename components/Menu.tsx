@@ -37,7 +37,7 @@ export function Menu() {
             <div className="p-6">
               <div className="flex items-start justify-between gap-4">
                 <h3 className="font-display text-2xl leading-tight">{item.name}</h3>
-                <p className="shrink-0 font-semibold text-terracotta">{item.price}</p>
+                <p className="shrink-0 rounded-xl bg-terracotta px-3.5 py-2 text-lg font-bold leading-none text-white shadow-sm">{item.price}</p>
               </div>
               <p className="mt-3 text-sm leading-6 text-coffee/65">{item.description}</p>
             </div>
