@@ -1,16 +1,20 @@
-# new_projecty
+# Тёплый Дом
 
-Project workspace. Application stack and features will be chosen with the first task.
+Каркас одностраничного лендинга кофейни на Next.js, App Router и Tailwind CSS.
 
-## Development workflow
+## Запуск
 
-- Keep main stable; use feat/* and fix/* branches for changes.
-- Review the diff and run relevant checks before committing.
-- Commit meaningful steps with clear messages.
-- Push completed changes and use pull requests for review.
-- Mark releases with version tags when an application is ready.
+```bash
+npm install
+npm run dev
+```
 
-## Local configuration
+Откройте [http://localhost:3000](http://localhost:3000).
 
-Keep secrets in .env files. Commit only .env.example with placeholder values.
-Dependencies, build output and local secrets are excluded through .gitignore.
+## Проверки
+
+```bash
+npm run lint
+npm run typecheck
+npm run build
+```
