@@ -1,0 +1,24 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+playwright-report/
+test-results/
+.vercel/
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Logs and OS files
+*.log
+.DS_Store
+Thumbs.db
+# Python environments and caches
+.venv/
+__pycache__/
+.pytest_cache/
