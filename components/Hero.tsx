@@ -1,3 +1,6 @@
+import Image from "next/image";
+import heroImage from "@/public/images/hero-cafe.png";
+
 export function Hero() {
   return (
     <section id="hero" className="relative flex min-h-svh items-center overflow-hidden px-5 pb-16 pt-40 sm:px-8 md:pt-28 lg:px-12">
@@ -20,10 +23,15 @@ export function Hero() {
           </a>
         </div>
 
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-md rounded-t-full rounded-b-[2.5rem] bg-gray-200 shadow-soft">
-          <span className="absolute inset-0 flex items-center justify-center text-sm text-gray-500">
-            photo placeholder
-          </span>
+        <div className="relative mx-auto aspect-[4/5] w-full max-w-md overflow-hidden rounded-t-full rounded-b-[2.5rem] bg-cream-deep shadow-soft">
+          <Image
+            src={heroImage}
+            alt="Зал кофейни «Тёплый Дом» в тёплом солнечном свете"
+            fill
+            priority
+            sizes="(min-width: 1024px) 448px, (min-width: 640px) 60vw, 90vw"
+            className="object-cover"
+          />
         </div>
       </div>
     </section>
