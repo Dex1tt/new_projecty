@@ -8,18 +8,18 @@ export function Hero() {
 
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr]">
         <div className="max-w-3xl">
-          <p className="mb-6 text-sm font-medium text-terracotta">Кофейня «Тёплый Дом»</p>
+          <p className="mb-6 text-sm font-medium text-terracotta">Кофе, выпечка и время для себя</p>
           <h1 className="font-display text-5xl font-medium leading-[1.02] tracking-tight sm:text-7xl lg:text-8xl">
-            Hero Section
+            Место, где начинается тёплый день
           </h1>
           <p className="mt-7 max-w-xl text-lg leading-8 text-coffee/70">
-            Placeholder subtitle for the future main message of the coffee shop.
+            Каждое утро здесь пахнет свежим кофе и домашней выпечкой.
           </p>
           <a
-            href="#booking"
+            href="#menu"
             className="mt-10 inline-flex rounded-2xl bg-terracotta px-7 py-4 font-semibold text-white shadow-soft transition-colors hover:bg-terracotta-dark"
           >
-            Забронировать столик
+            Посмотреть меню
           </a>
         </div>
 

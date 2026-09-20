@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Тёплый Дом — кофейня",
+  title: "Тёплый Дом | кофейня",
   description: "Каркас лендинга уютной городской кофейни «Тёплый Дом».",
 };
 
