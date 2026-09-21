@@ -1,6 +1,5 @@
 import Image from "next/image";
 import aboutImage from "@/public/images/about-barista.png";
-import croissantImage from "@/public/images/menu-croissant.png";
 import { SectionShell } from "./SectionShell";
 
 const facts = [
@@ -13,30 +12,15 @@ export function About() {
   return (
     <SectionShell id="about" title="О нас" alternate>
       <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-14 xl:gap-20">
-        <div className="relative pb-10 pr-5 sm:pb-14 sm:pr-14 lg:col-span-6">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-cream-deep shadow-soft">
-            <Image
-              src={aboutImage}
-              alt="Бариста готовит кофе за деревянной стойкой"
-              fill
-              draggable={false}
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="protected-photo object-cover"
-            />
-          </div>
-
-          <div className="absolute bottom-0 right-0 w-[44%] rounded-[1.75rem] bg-cream p-2.5 shadow-soft sm:p-3">
-            <div className="relative aspect-square overflow-hidden rounded-[1.25rem]">
-              <Image
-                src={croissantImage}
-                alt="Свежий круассан из собственной пекарни"
-                fill
-                draggable={false}
-                sizes="(min-width: 1024px) 20vw, 42vw"
-                className="protected-photo object-cover"
-              />
-            </div>
-          </div>
+        <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-cream-deep shadow-soft lg:col-span-6">
+          <Image
+            src={aboutImage}
+            alt="Бариста готовит кофе за деревянной стойкой"
+            fill
+            draggable={false}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            className="protected-photo object-cover"
+          />
         </div>
 
         <div className="lg:col-span-6">
@@ -52,17 +36,20 @@ export function About() {
               Здесь не нужно спешить. Только хороший кофе, мягкий свет и атмосфера, в которой легко выдохнуть.
             </p>
           </div>
-
-          <dl className="mt-10 grid gap-6 border-t border-coffee/15 pt-7 sm:grid-cols-3">
-            {facts.map((fact) => (
-              <div key={fact.value}>
-                <dt className="text-sm leading-5 text-coffee/55">{fact.label}</dt>
-                <dd className="mt-2 font-display text-2xl leading-tight text-terracotta">{fact.value}</dd>
-              </div>
-            ))}
-          </dl>
         </div>
       </div>
+
+      <dl className="mt-12 grid overflow-hidden rounded-[2rem] bg-coffee px-7 py-8 text-cream shadow-soft sm:grid-cols-3 sm:px-10 sm:py-9">
+        {facts.map((fact) => (
+          <div
+            key={fact.value}
+            className="border-b border-cream/15 py-6 first:pt-0 last:border-0 last:pb-0 sm:border-b-0 sm:border-r sm:px-8 sm:py-0 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0"
+          >
+            <dt className="text-sm leading-5 text-cream/55">{fact.label}</dt>
+            <dd className="mt-2 font-display text-3xl leading-tight text-cream">{fact.value}</dd>
+          </div>
+        ))}
+      </dl>
     </SectionShell>
   );
 }
