@@ -35,6 +35,11 @@
     -webkit-user-drag: none;
   }
 
+  .content-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+  }
+
   [data-reveal="pending"] {
     opacity: 0;
     transform: translateY(1.5rem);

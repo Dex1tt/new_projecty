@@ -7,13 +7,13 @@ import latteImage from "@/public/images/menu-latte.png";
 import tiramisuImage from "@/public/images/menu-tiramisu.jpg";
 import { SectionShell } from "./SectionShell";
 
-const menuItems: Array<{ name: string; description: string; price: string; image: StaticImageData }> = [
-  { name: "Капучино с корицей", description: "Классический капучино с щепоткой корицы", price: "280 ₽", image: cappuccinoImage },
-  { name: "Флэт уайт", description: "Двойной эспрессо с бархатистым молоком", price: "300 ₽", image: flatWhiteImage },
-  { name: "Раф ванильный", description: "Нежный кофе на сливках с натуральной ванилью", price: "320 ₽", image: latteImage },
-  { name: "Чизкейк Нью-Йорк", description: "Классический чизкейк на песочной основе", price: "340 ₽", image: cheesecakeImage },
-  { name: "Круассан с миндалём", description: "Свежий круассан с миндальной начинкой", price: "250 ₽", image: croissantImage },
-  { name: "Тирамису", description: "Воздушный крем, савоярди и насыщенный эспрессо", price: "310 ₽", image: tiramisuImage },
+const menuItems: Array<{ name: string; description: string; price: string; image: StaticImageData; alt: string }> = [
+  { name: "Капучино с корицей", description: "Классический капучино с щепоткой корицы", price: "280 ₽", image: cappuccinoImage, alt: "Капучино с корицей на деревянном столе в кофейне «Тёплый Дом»" },
+  { name: "Флэт уайт", description: "Двойной эспрессо с бархатистым молоком", price: "300 ₽", image: flatWhiteImage, alt: "Флэт уайт с латте-артом на деревянном столе" },
+  { name: "Раф ванильный", description: "Нежный кофе на сливках с натуральной ванилью", price: "320 ₽", image: latteImage, alt: "Ванильный раф в стеклянном бокале с рисунком на молочной пене" },
+  { name: "Чизкейк Нью-Йорк", description: "Классический чизкейк на песочной основе", price: "340 ₽", image: cheesecakeImage, alt: "Кусочек чизкейка Нью-Йорк на белой тарелке" },
+  { name: "Круассан с миндалём", description: "Свежий круассан с миндальной начинкой", price: "250 ₽", image: croissantImage, alt: "Свежий миндальный круассан на керамической тарелке" },
+  { name: "Тирамису", description: "Воздушный крем, савоярди и насыщенный эспрессо", price: "310 ₽", image: tiramisuImage, alt: "Порция тирамису с какао на тарелке в кофейне «Тёплый Дом»" },
 ];
 
 export function Menu() {
@@ -35,7 +35,7 @@ export function Menu() {
                 <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[3/2] lg:h-full lg:w-[42%] lg:shrink-0 lg:aspect-auto">
                   <Image
                     src={item.image}
-                    alt={item.name}
+                    alt={item.alt}
                     fill
                     draggable={false}
                     sizes="(min-width: 1024px) 14vw, (min-width: 640px) 50vw, 100vw"
@@ -59,7 +59,7 @@ export function Menu() {
               <div className="absolute inset-0">
                 <Image
                   src={item.image}
-                  alt={item.name}
+                  alt={item.alt}
                   fill
                   draggable={false}
                   sizes="(min-width: 1024px) 66vw, 100vw"

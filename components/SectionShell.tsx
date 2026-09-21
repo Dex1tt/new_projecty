@@ -10,7 +10,7 @@ type SectionShellProps = {
 
 export function SectionShell({ id, title, children, alternate = false }: SectionShellProps) {
   return (
-    <section id={id} className={`scroll-mt-32 px-5 py-24 sm:px-8 lg:px-12 lg:py-32 ${alternate ? "bg-white/35" : ""}`}>
+    <section id={id} className={`content-auto scroll-mt-32 px-5 py-24 sm:px-8 lg:px-12 lg:py-32 ${alternate ? "bg-white/35" : ""}`}>
       <div className="mx-auto max-w-7xl">
         <ScrollReveal>
           <h2 className="font-display text-4xl font-medium tracking-tight sm:text-5xl">{title}</h2>

@@ -2,10 +2,10 @@ import { getImageProps } from "next/image";
 import desktopHeroImage from "@/public/images/hero-background-v2.png";
 import mobileHeroImage from "@/public/images/hero-mobile-v1.png";
 
-const heroAlt = "Светлый зал кофейни с деревянной мебелью, растениями и чашкой кофе";
+const heroAlt = "Интерьер кофейни «Тёплый Дом» в Москве с деревянной мебелью, растениями и чашкой кофе";
 
 function HeroPicture() {
-  const common = { alt: heroAlt, sizes: "100vw", quality: 85 };
+  const common = { alt: heroAlt, sizes: "100vw", loading: "eager" as const };
   const {
     props: { srcSet: desktopSrcSet },
   } = getImageProps({

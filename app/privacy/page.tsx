@@ -5,6 +5,16 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Политика конфиденциальности | Тёплый Дом",
   description: "Политика обработки персональных данных на сайте кофейни «Тёплый Дом».",
+  alternates: {
+    canonical: "/privacy",
+  },
+  openGraph: {
+    title: "Политика конфиденциальности | Тёплый Дом",
+    description: "Политика обработки персональных данных на сайте кофейни «Тёплый Дом».",
+    url: "/privacy",
+    locale: "ru_RU",
+    type: "website",
+  },
 };
 
 const sections = [
@@ -40,7 +50,7 @@ export default function PrivacyPage() {
       <div className="mx-auto max-w-4xl">
         <div className="flex items-center justify-between gap-6">
           <Link href="/" aria-label="Вернуться на главную">
-            <Image src="/brand-logo.svg" alt="Тёплый Дом" width={220} height={58} className="h-11 w-auto" priority />
+            <Image src="/brand-logo.svg" alt="Логотип кофейни «Тёплый Дом»" width={220} height={58} className="h-11 w-auto" loading="eager" />
           </Link>
           <Link href="/" className="rounded-2xl border border-coffee/15 px-4 py-2.5 text-sm font-semibold hover:border-terracotta hover:text-terracotta">
             На главную

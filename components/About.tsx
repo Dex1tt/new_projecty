@@ -15,7 +15,7 @@ export function About() {
         <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-cream-deep shadow-soft lg:col-span-6">
           <Image
             src={aboutImage}
-            alt="Бариста готовит кофе за деревянной стойкой"
+            alt="Бариста кофейни «Тёплый Дом» готовит капучино за деревянной стойкой"
             fill
             draggable={false}
             sizes="(min-width: 1024px) 50vw, 100vw"

@@ -14,28 +14,28 @@ const galleryImages: Array<{
 }> = [
   {
     src: interiorImage,
-    alt: "Просторный зал кофейни с деревянной мебелью и растениями",
+    alt: "Большой зал кофейни «Тёплый Дом» с деревянной мебелью и зелёными растениями",
     label: "Большой зал",
     className: "sm:col-span-2 lg:col-span-7 lg:row-span-2",
     sizes: "(min-width: 1024px) 58vw, 100vw",
   },
   {
     src: coffeeImage,
-    alt: "Чашка кофе на деревянном столе",
+    alt: "Чашка кофе с латте-артом на деревянном столе в кофейне «Тёплый Дом»",
     label: "Кофе в деталях",
     className: "lg:col-span-5",
     sizes: "(min-width: 1024px) 42vw, (min-width: 640px) 50vw, 100vw",
   },
   {
     src: pastriesImage,
-    alt: "Витрина со свежей выпечкой и десертами",
+    alt: "Витрина кофейни «Тёплый Дом» со свежей выпечкой и десертами",
     label: "Свежая витрина",
     className: "lg:col-span-5",
     sizes: "(min-width: 1024px) 42vw, (min-width: 640px) 50vw, 100vw",
   },
   {
     src: readingCornerImage,
-    alt: "Уютный уголок с креслом, книгами и растениями",
+    alt: "Уголок для чтения с креслом, книгами и растениями в кофейне «Тёплый Дом»",
     label: "Уголок для чтения",
     className: "lg:col-span-8",
     sizes: "(min-width: 1024px) 66vw, (min-width: 640px) 50vw, 100vw",
