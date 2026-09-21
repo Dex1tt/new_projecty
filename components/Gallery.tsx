@@ -66,7 +66,7 @@ export function Gallery() {
           </figure>
         ))}
         <aside className="flex flex-col justify-between rounded-[2rem] bg-terracotta p-7 text-white shadow-soft sm:p-8 lg:col-span-4">
-          <p className="font-display text-3xl leading-tight">Здесь можно замедлиться</p>
+          <p className="font-display text-3xl leading-tight">Место для встреч и хорошего кофе</p>
           <p className="max-w-sm text-sm leading-6 text-white/80">
             Тёплый свет, любимые книги и время на хороший кофе без спешки.
           </p>

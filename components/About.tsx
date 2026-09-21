@@ -25,7 +25,7 @@ export function About() {
 
         <div className="lg:col-span-6">
           <p className="max-w-2xl font-display text-3xl leading-tight sm:text-4xl">
-            Мы создавали не просто кофейню, а место, где можно ненадолго замедлиться.
+            Мы создали кофейню, куда хочется возвращаться за любимым кофе, свежей выпечкой и тёплой атмосферой.
           </p>
 
           <div className="mt-7 max-w-2xl space-y-4 text-base leading-7 text-coffee/70 sm:text-lg sm:leading-8">
