@@ -22,36 +22,56 @@ export function Menu() {
       <p className="mb-10 max-w-2xl text-lg leading-8 text-coffee/70">
         Знакомая классика и десерты, которые мы готовим на собственной кухне.
       </p>
-      <div className="grid gap-5 sm:grid-cols-2 lg:auto-rows-[18rem] lg:grid-cols-6">
+      <div className="grid gap-5 sm:grid-cols-2 lg:auto-rows-[12rem] lg:grid-cols-6">
         {menuItems.map((item, index) => {
           const featured = index === 0;
+
+          if (!featured) {
+            return (
+              <article
+                key={item.name}
+                className="group overflow-hidden rounded-[2rem] bg-white/70 shadow-soft lg:col-span-2 lg:flex"
+              >
+                <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[3/2] lg:h-full lg:w-[42%] lg:shrink-0 lg:aspect-auto">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    fill
+                    sizes="(min-width: 1024px) 14vw, (min-width: 640px) 50vw, 100vw"
+                    className="object-cover transition-transform duration-700 group-hover:scale-[1.035] motion-reduce:transition-none"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="font-display text-xl leading-tight">{item.name}</h3>
+                  <p className="mt-2 text-sm leading-5 text-coffee/65">{item.description}</p>
+                  <p className="mt-4 self-start rounded-xl bg-terracotta px-3.5 py-2 text-lg font-bold leading-none text-white shadow-sm lg:mt-auto">{item.price}</p>
+                </div>
+              </article>
+            );
+          }
 
           return (
             <article
               key={item.name}
-              className={`group overflow-hidden rounded-[2rem] bg-white/70 shadow-soft ${
-                featured
-                  ? "relative min-h-[28rem] sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:min-h-0"
-                  : "lg:col-span-2"
-              }`}
+              className="group relative min-h-[28rem] overflow-hidden rounded-[2rem] bg-white/70 shadow-soft sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:min-h-0"
             >
-              <div className={featured ? "absolute inset-0" : "relative h-36 overflow-hidden"}>
+              <div className="absolute inset-0">
                 <Image
                   src={item.image}
                   alt={item.name}
                   fill
-                  sizes={featured ? "(min-width: 1024px) 66vw, 100vw" : "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"}
+                  sizes="(min-width: 1024px) 66vw, 100vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-[1.035] motion-reduce:transition-none"
                 />
-                {featured ? <div className="absolute inset-0 bg-gradient-to-t from-coffee/90 via-coffee/20 to-transparent" /> : null}
+                <div className="absolute inset-0 bg-gradient-to-t from-coffee/90 via-coffee/20 to-transparent" />
               </div>
 
-              <div className={featured ? "absolute inset-x-0 bottom-0 p-7 text-cream sm:p-9" : "p-5"}>
+              <div className="absolute inset-x-0 bottom-0 p-7 text-cream sm:p-9">
                 <div className="flex items-start justify-between gap-4">
-                  <h3 className={`font-display leading-tight ${featured ? "text-3xl sm:text-4xl" : "text-xl"}`}>{item.name}</h3>
+                  <h3 className="font-display text-3xl leading-tight sm:text-4xl">{item.name}</h3>
                   <p className="shrink-0 rounded-xl bg-terracotta px-3.5 py-2 text-lg font-bold leading-none text-white shadow-sm">{item.price}</p>
                 </div>
-                <p className={`mt-3 leading-6 ${featured ? "max-w-lg text-base text-cream/80" : "text-sm text-coffee/65"}`}>{item.description}</p>
+                <p className="mt-3 max-w-lg text-base leading-6 text-cream/80">{item.description}</p>
               </div>
             </article>
           );

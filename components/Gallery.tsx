@@ -8,39 +8,44 @@ import { SectionShell } from "./SectionShell";
 const galleryImages: Array<{
   src: StaticImageData;
   alt: string;
+  label: string;
   className: string;
   sizes: string;
 }> = [
   {
     src: interiorImage,
     alt: "Просторный зал кофейни с деревянной мебелью и растениями",
+    label: "Большой зал",
     className: "sm:col-span-2 lg:col-span-7 lg:row-span-2",
     sizes: "(min-width: 1024px) 58vw, 100vw",
   },
   {
     src: coffeeImage,
     alt: "Чашка кофе на деревянном столе",
+    label: "Кофе в деталях",
     className: "lg:col-span-5",
     sizes: "(min-width: 1024px) 42vw, (min-width: 640px) 50vw, 100vw",
   },
   {
     src: pastriesImage,
     alt: "Витрина со свежей выпечкой и десертами",
+    label: "Свежая витрина",
     className: "lg:col-span-5",
     sizes: "(min-width: 1024px) 42vw, (min-width: 640px) 50vw, 100vw",
   },
   {
     src: readingCornerImage,
     alt: "Уютный уголок с креслом, книгами и растениями",
-    className: "sm:col-span-2 lg:col-span-12",
-    sizes: "(min-width: 1024px) 100vw, 100vw",
+    label: "Уголок для чтения",
+    className: "lg:col-span-8",
+    sizes: "(min-width: 1024px) 66vw, (min-width: 640px) 50vw, 100vw",
   },
 ];
 
 export function Gallery() {
   return (
     <SectionShell id="gallery" title="Галерея" alternate>
-      <div className="grid auto-rows-[15rem] gap-5 sm:grid-cols-2 lg:auto-rows-[17rem] lg:grid-cols-12">
+      <div className="grid auto-rows-[15rem] gap-5 sm:grid-cols-2 lg:auto-rows-[14rem] lg:grid-cols-12">
         {galleryImages.map((image) => (
           <figure
             key={image.alt}
@@ -53,8 +58,18 @@ export function Gallery() {
               sizes={image.sizes}
               className="object-cover transition-transform duration-700 group-hover:scale-[1.025] motion-reduce:transition-none"
             />
+            <div className="absolute inset-0 bg-gradient-to-t from-coffee/75 via-transparent to-transparent" />
+            <figcaption className="absolute inset-x-0 bottom-0 p-6 font-display text-2xl text-cream sm:p-7">
+              {image.label}
+            </figcaption>
           </figure>
         ))}
+        <aside className="flex flex-col justify-between rounded-[2rem] bg-terracotta p-7 text-white shadow-soft sm:p-8 lg:col-span-4">
+          <p className="font-display text-3xl leading-tight">Здесь можно замедлиться</p>
+          <p className="max-w-sm text-sm leading-6 text-white/80">
+            Тёплый свет, любимые книги и время на хороший кофе без спешки.
+          </p>
+        </aside>
       </div>
     </SectionShell>
   );
