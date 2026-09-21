@@ -55,8 +55,9 @@ export function Gallery() {
               src={image.src}
               alt={image.alt}
               fill
+              draggable={false}
               sizes={image.sizes}
-              className="object-cover transition-transform duration-700 group-hover:scale-[1.025] motion-reduce:transition-none"
+              className="protected-photo object-cover transition-transform duration-700 group-hover:scale-[1.025] motion-reduce:transition-none"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-coffee/75 via-transparent to-transparent" />
             <figcaption className="absolute inset-x-0 bottom-0 p-6 font-display text-2xl text-cream sm:p-7">

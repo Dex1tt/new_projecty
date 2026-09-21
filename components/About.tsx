@@ -12,8 +12,9 @@ export function About() {
             src={aboutImage}
             alt="Бариста готовит кофе за деревянной стойкой"
             fill
+            draggable={false}
             sizes="(min-width: 1024px) 50vw, 100vw"
-            className="object-cover"
+            className="protected-photo object-cover"
           />
         </div>
         <div>

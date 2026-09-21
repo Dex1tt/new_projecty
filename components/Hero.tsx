@@ -28,7 +28,7 @@ function HeroPicture() {
       <source media="(min-width: 768px)" srcSet={desktopSrcSet} />
       <source media="(max-width: 767px)" srcSet={mobileSrcSet} />
       {/* getImageProps сохраняет оптимизацию Next.js для art direction */}
-      <img {...mobileProps} alt={heroAlt} fetchPriority="high" className="h-full w-full object-cover object-center" />
+      <img {...mobileProps} alt={heroAlt} draggable={false} fetchPriority="high" className="protected-photo h-full w-full object-cover object-center" />
     </picture>
   );
 }

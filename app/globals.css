@@ -29,6 +29,12 @@
 }
 
 @layer utilities {
+  .protected-photo {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
   [data-reveal="pending"] {
     opacity: 0;
     transform: translateY(1.5rem);

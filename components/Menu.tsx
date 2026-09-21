@@ -37,8 +37,9 @@ export function Menu() {
                     src={item.image}
                     alt={item.name}
                     fill
+                    draggable={false}
                     sizes="(min-width: 1024px) 14vw, (min-width: 640px) 50vw, 100vw"
-                    className="object-cover transition-transform duration-700 group-hover:scale-[1.035] motion-reduce:transition-none"
+                    className="protected-photo object-cover transition-transform duration-700 group-hover:scale-[1.035] motion-reduce:transition-none"
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
@@ -60,8 +61,9 @@ export function Menu() {
                   src={item.image}
                   alt={item.name}
                   fill
+                  draggable={false}
                   sizes="(min-width: 1024px) 66vw, 100vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-[1.035] motion-reduce:transition-none"
+                  className="protected-photo object-cover transition-transform duration-700 group-hover:scale-[1.035] motion-reduce:transition-none"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-coffee/90 via-coffee/20 to-transparent" />
               </div>
