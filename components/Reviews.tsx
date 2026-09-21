@@ -23,7 +23,7 @@ export function Reviews() {
         {reviews.map((review) => (
           <article key={review.author} className="flex min-h-64 flex-col rounded-2xl bg-white/70 p-7 shadow-soft sm:p-8">
             <QuoteIcon className="h-8 w-8 text-terracotta" />
-            <blockquote className="mt-6 flex-1 text-base leading-7 text-coffee/75">
+            <blockquote className="mt-6 flex-1 text-base italic leading-7 text-coffee/75">
               «{review.text}»
             </blockquote>
             <p className="mt-7 font-semibold">{review.author}</p>
