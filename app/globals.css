@@ -63,7 +63,7 @@
 
 @media (hover: hover) and (pointer: fine) {
   body {
-    cursor: url("/coffee-cursor.svg") 14 14, auto;
+    cursor: url("/coffee-cursor.svg") 3 3, auto;
   }
 
   a,
@@ -71,7 +71,7 @@
   select,
   label,
   [role="button"] {
-    cursor: url("/coffee-cursor.svg") 14 14, pointer;
+    cursor: url("/coffee-cursor.svg") 3 3, pointer;
   }
 
   input,
