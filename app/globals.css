@@ -60,3 +60,22 @@
     transition: none;
   }
 }
+
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: url("/coffee-cursor.svg") 14 14, auto;
+  }
+
+  a,
+  button,
+  select,
+  label,
+  [role="button"] {
+    cursor: url("/coffee-cursor.svg") 14 14, pointer;
+  }
+
+  input,
+  textarea {
+    cursor: text;
+  }
+}
