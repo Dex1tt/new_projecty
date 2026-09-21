@@ -39,14 +39,14 @@ export function About() {
         </div>
       </div>
 
-      <dl className="mt-12 grid overflow-hidden rounded-[2rem] bg-coffee px-7 py-8 text-cream shadow-soft sm:grid-cols-3 sm:px-10 sm:py-9">
+      <dl className="mt-12 grid border-t border-coffee/15 pt-6 sm:grid-cols-3 sm:pt-7">
         {facts.map((fact) => (
           <div
             key={fact.value}
-            className="border-b border-cream/15 py-6 first:pt-0 last:border-0 last:pb-0 sm:border-b-0 sm:border-r sm:px-8 sm:py-0 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0"
+            className="border-b border-coffee/10 py-5 first:pt-0 last:border-0 last:pb-0 sm:border-b-0 sm:border-r sm:px-8 sm:py-0 sm:first:pl-0 sm:last:border-r-0 sm:last:pr-0"
           >
-            <dt className="text-sm leading-5 text-cream/55">{fact.label}</dt>
-            <dd className="mt-2 font-display text-3xl leading-tight text-cream">{fact.value}</dd>
+            <dt className="text-xs leading-5 text-coffee/50 sm:text-sm">{fact.label}</dt>
+            <dd className="mt-1.5 font-display text-xl leading-tight text-coffee/85 sm:text-2xl">{fact.value}</dd>
           </div>
         ))}
       </dl>
