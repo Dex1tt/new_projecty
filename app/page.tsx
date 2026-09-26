@@ -48,7 +48,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(cafeJsonLd).replace(/</g, "\\u003c") }}
       />
       <Header />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Hero />
         <About />
         <Menu />
