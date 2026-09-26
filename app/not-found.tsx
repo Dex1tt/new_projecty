@@ -1,12 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import { withBasePath } from "@/lib/site";
 
 export default function NotFound() {
   return (
     <main className="flex min-h-svh items-center bg-cream px-5 py-12 sm:px-8">
       <div className="mx-auto w-full max-w-3xl text-center">
         <Image
-          src="/brand-logo.svg"
+          src={withBasePath("/brand-logo.svg")}
           alt="Логотип кофейни «Тёплый Дом»"
           width={220}
           height={58}

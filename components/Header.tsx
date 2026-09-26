@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { withBasePath } from "@/lib/site";
 import { CloseIcon, MenuIcon } from "./Icons";
 
 const navigation = [
@@ -72,7 +73,7 @@ export function Header() {
       >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-5 px-5 sm:px-8 lg:px-12">
         <a href="#hero" aria-label="Тёплый Дом, к началу страницы" onClick={() => setMenuOpen(false)} className="shrink-0">
-          <Image src="/brand-logo.svg" alt="Логотип кофейни «Тёплый Дом»" width={220} height={58} className="h-9 w-auto sm:h-11" loading="eager" />
+          <Image src={withBasePath("/brand-logo.svg")} alt="Логотип кофейни «Тёплый Дом»" width={220} height={58} className="h-9 w-auto sm:h-11" loading="eager" />
         </a>
 
         <nav aria-label="Основная навигация" className="hidden md:block">

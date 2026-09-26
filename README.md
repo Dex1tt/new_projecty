@@ -59,6 +59,18 @@ npm run typecheck
 npm run build
 ```
 
+## Публикация на GitHub Pages
+
+Проект настроен на статический экспорт Next.js. При каждом push в ветку `main` workflow `.github/workflows/deploy-pages.yml` проверяет проект, собирает папку `out` с правильным `basePath` и публикует её через GitHub Pages.
+
+Адрес проекта после включения Pages:
+
+```text
+https://dex1tt.github.io/new_projecty/
+```
+
+В настройках репозитория GitHub в разделе **Settings → Pages → Build and deployment** источником должен быть выбран **GitHub Actions**.
+
 ## Статус проекта
 
 Проект демонстрационный: адрес, контакты и карта вымышлены. Форма полностью отрабатывает пользовательский сценарий в браузере, но не передаёт данные на сервер и не создаёт реальную бронь.

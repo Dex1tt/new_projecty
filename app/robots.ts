@@ -1,12 +1,15 @@
 import type { MetadataRoute } from "next";
+import { absoluteUrl, basePath, siteUrl } from "@/lib/site";
+
+export const dynamic = "force-static";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      allow: "/",
+      allow: basePath ? `${basePath}/` : "/",
     },
-    sitemap: "https://teplydom.ru/sitemap.xml",
-    host: "https://teplydom.ru",
+    sitemap: absoluteUrl("/sitemap.xml"),
+    host: siteUrl,
   };
 }

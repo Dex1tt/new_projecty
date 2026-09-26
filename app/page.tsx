@@ -6,14 +6,15 @@ import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { Menu } from "@/components/Menu";
 import { Reviews } from "@/components/Reviews";
+import { absoluteUrl, siteUrl } from "@/lib/site";
 
 const cafeJsonLd = {
   "@context": "https://schema.org",
   "@type": "CafeOrCoffeeShop",
   name: "Тёплый Дом",
   description: "Кофейня в Москве со свежей обжаркой и домашней выпечкой.",
-  image: "https://teplydom.ru/hero.jpg",
-  url: "https://teplydom.ru",
+  image: absoluteUrl("/hero.jpg"),
+  url: siteUrl,
   telephone: "+7 999 123-45-67",
   priceRange: "₽₽",
   servesCuisine: ["Кофе", "Домашняя выпечка", "Десерты"],
