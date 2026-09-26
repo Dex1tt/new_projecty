@@ -69,7 +69,7 @@ export function Menu() {
               </div>
 
               <div className="absolute inset-x-0 bottom-0 p-7 text-cream sm:p-9">
-                <div className="flex items-start justify-between gap-4">
+                <div className="flex flex-col items-start gap-4 sm:flex-row sm:justify-between">
                   <h3 className="font-display text-3xl leading-tight sm:text-4xl">{item.name}</h3>
                   <p className="shrink-0 rounded-xl bg-terracotta px-3.5 py-2 text-lg font-bold leading-none text-white shadow-sm">{item.price}</p>
                 </div>

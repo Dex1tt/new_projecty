@@ -19,10 +19,13 @@ const reviews = [
 export function Reviews() {
   return (
     <SectionShell id="reviews" title="Отзывы гостей">
-      <div className="grid divide-y divide-coffee/15 border-y border-coffee/15 lg:grid-cols-3 lg:divide-x lg:divide-y-0">
+      <div className="grid gap-5 lg:grid-cols-3">
         {reviews.map((review) => (
-          <article key={review.author} className="flex min-h-60 flex-col py-8 lg:px-8 lg:first:pl-0 lg:last:pr-0">
-            <QuoteIcon className="h-7 w-7 text-terracotta" />
+          <article
+            key={review.author}
+            className="flex min-h-64 flex-col rounded-[2rem] bg-white/70 p-7 shadow-soft transition-transform duration-300 hover:-translate-y-1 motion-reduce:transition-none sm:p-8"
+          >
+            <QuoteIcon className="h-8 w-8 text-terracotta" />
             <blockquote className="mt-6 flex-1 text-base italic leading-7 text-coffee/75">
               «{review.text}»
             </blockquote>
