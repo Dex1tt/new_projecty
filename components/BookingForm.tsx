@@ -201,7 +201,7 @@ export function BookingForm() {
       {errors.consent ? <p id="booking-consent-error" className="mt-2 text-sm text-red-800">{errors.consent}</p> : null}
 
       <button
-        className="mt-6 w-full rounded-2xl bg-terracotta px-6 py-4 font-semibold text-white transition-[background-color,transform] hover:bg-terracotta-dark active:translate-y-px disabled:cursor-wait disabled:bg-coffee/40"
+        className="mt-6 w-full rounded-2xl bg-terracotta-dark px-6 py-4 font-semibold text-white transition-[background-color,transform] hover:bg-coffee active:translate-y-px disabled:cursor-wait disabled:bg-coffee/40"
         type="submit"
         disabled={submitting}
       >

@@ -20,7 +20,7 @@ export default function NotFound() {
         </p>
         <Link
           href="/"
-          className="mt-8 inline-flex rounded-2xl bg-terracotta px-7 py-4 font-semibold text-white shadow-soft transition-[background-color,transform] hover:bg-terracotta-dark active:translate-y-px"
+          className="mt-8 inline-flex rounded-2xl bg-terracotta-dark px-7 py-4 font-semibold text-white shadow-soft transition-[background-color,transform] hover:bg-coffee active:translate-y-px"
         >
           Вернуться на главную
         </Link>

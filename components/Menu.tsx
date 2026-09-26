@@ -45,7 +45,7 @@ export function Menu() {
                 <div className="flex flex-1 flex-col p-5">
                   <h3 className="font-display text-xl leading-tight">{item.name}</h3>
                   <p className="mt-2 text-sm leading-5 text-coffee/65">{item.description}</p>
-                  <p className="mt-4 self-start rounded-xl bg-terracotta px-3.5 py-2 text-lg font-bold leading-none text-white shadow-sm lg:mt-auto">{item.price}</p>
+                  <p className="mt-4 self-start rounded-xl bg-terracotta-dark px-3.5 py-2 text-lg font-bold leading-none text-white shadow-sm lg:mt-auto">{item.price}</p>
                 </div>
               </article>
             );
@@ -71,7 +71,7 @@ export function Menu() {
               <div className="absolute inset-x-0 bottom-0 p-7 text-cream sm:p-9">
                 <div className="flex flex-col items-start gap-4 sm:flex-row sm:justify-between">
                   <h3 className="font-display text-3xl leading-tight sm:text-4xl">{item.name}</h3>
-                  <p className="shrink-0 rounded-xl bg-terracotta px-3.5 py-2 text-lg font-bold leading-none text-white shadow-sm">{item.price}</p>
+                  <p className="shrink-0 rounded-xl bg-terracotta-dark px-3.5 py-2 text-lg font-bold leading-none text-white shadow-sm">{item.price}</p>
                 </div>
                 <p className="mt-3 max-w-lg text-base leading-6 text-cream/80">{item.description}</p>
               </div>

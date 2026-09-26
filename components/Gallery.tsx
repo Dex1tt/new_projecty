@@ -133,7 +133,7 @@ export function Gallery() {
             </button>
           </figure>
         ))}
-        <aside className="flex flex-col justify-between rounded-[2rem] bg-terracotta p-7 text-white shadow-soft sm:p-8 lg:col-span-4">
+        <aside className="flex flex-col justify-between rounded-[2rem] bg-terracotta-dark p-7 text-white shadow-soft sm:p-8 lg:col-span-4">
           <p className="font-display text-3xl leading-tight">Выбирайте столик по настроению</p>
           <p className="max-w-sm text-sm leading-6 text-white/80">
             У окна для работы, у книжной полки для отдыха, в большом зале для встреч.

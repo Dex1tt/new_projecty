@@ -96,7 +96,7 @@ export function Header() {
 
         <a
           href="#booking"
-          className="hidden rounded-2xl bg-terracotta px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-[background-color,transform] hover:bg-terracotta-dark active:translate-y-px md:inline-flex"
+          className="hidden rounded-2xl bg-terracotta-dark px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-[background-color,transform] hover:bg-coffee active:translate-y-px md:inline-flex"
         >
           Забронировать столик
         </a>
@@ -144,7 +144,7 @@ export function Header() {
           <a
             href="#booking"
             onClick={() => setMenuOpen(false)}
-            className="mt-4 flex w-full justify-center rounded-2xl bg-terracotta px-5 py-3.5 text-sm font-semibold text-white transition-[background-color,transform] active:translate-y-px"
+            className="mt-4 flex w-full justify-center rounded-2xl bg-terracotta-dark px-5 py-3.5 text-sm font-semibold text-white transition-[background-color,transform] active:translate-y-px"
           >
             Забронировать столик
           </a>
