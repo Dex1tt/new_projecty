@@ -12,13 +12,13 @@ export function Footer() {
         </div>
         <div className="text-sm text-cream/65 sm:text-right">
           <div className="flex items-center gap-4 sm:justify-end">
-            <a href="https://instagram.com/teply.dom.coffee" aria-label="Мы в Instagram" className="rounded-full p-2 hover:bg-cream/10 hover:text-cream">
+            <a href="https://instagram.com/teply.dom.coffee" aria-label="Мы в Instagram" className="rounded-full p-3 hover:bg-cream/10 hover:text-cream">
               <InstagramIcon className="h-5 w-5" />
             </a>
-            <a href="https://wa.me/79991234567" aria-label="Написать в WhatsApp" className="rounded-full p-2 hover:bg-cream/10 hover:text-cream">
+            <a href="https://wa.me/79991234567" aria-label="Написать в WhatsApp" className="rounded-full p-3 hover:bg-cream/10 hover:text-cream">
               <MessageIcon className="h-5 w-5" />
             </a>
-            <a href="mailto:hello@teplydom.ru" aria-label="Написать на электронную почту" className="rounded-full p-2 hover:bg-cream/10 hover:text-cream">
+            <a href="mailto:hello@teplydom.ru" aria-label="Написать на электронную почту" className="rounded-full p-3 hover:bg-cream/10 hover:text-cream">
               <MailIcon className="h-5 w-5" />
             </a>
           </div>

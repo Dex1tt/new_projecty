@@ -19,7 +19,7 @@ const menuItems: Array<{ name: string; description: string; price: string; image
 export function Menu() {
   return (
     <SectionShell id="menu" title="Меню">
-      <p className="mb-10 max-w-2xl text-lg leading-8 text-coffee/70">
+      <p className="mb-8 max-w-2xl text-base leading-7 text-coffee/70 sm:mb-10 sm:text-lg sm:leading-8">
         Знакомая классика и десерты, которые мы готовим на собственной кухне.
       </p>
       <div className="grid gap-5 sm:grid-cols-2 lg:auto-rows-[12rem] lg:grid-cols-6">
@@ -32,7 +32,7 @@ export function Menu() {
                 key={item.name}
                 className="group overflow-hidden rounded-[2rem] bg-white/70 shadow-soft lg:col-span-2 lg:flex"
               >
-                <div className="relative aspect-[4/3] overflow-hidden sm:aspect-[3/2] lg:h-full lg:w-[42%] lg:shrink-0 lg:aspect-auto">
+                <div className="relative aspect-[16/10] overflow-hidden sm:aspect-[3/2] lg:h-full lg:w-[42%] lg:shrink-0 lg:aspect-auto">
                   <Image
                     src={item.image}
                     alt={item.alt}
@@ -54,7 +54,7 @@ export function Menu() {
           return (
             <article
               key={item.name}
-              className="group relative min-h-[28rem] overflow-hidden rounded-[2rem] bg-white/70 shadow-soft sm:col-span-2 lg:col-span-4 lg:row-span-2 lg:min-h-0"
+              className="group relative min-h-[24rem] overflow-hidden rounded-[2rem] bg-white/70 shadow-soft sm:col-span-2 sm:min-h-[28rem] lg:col-span-4 lg:row-span-2 lg:min-h-0"
             >
               <div className="absolute inset-0">
                 <Image

@@ -6,7 +6,7 @@ import { SectionShell } from "./SectionShell";
 export function Contact() {
   return (
     <SectionShell id="contact" title="Контакты" alternate>
-      <div className="space-y-12">
+      <div className="space-y-10 sm:space-y-12">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="max-w-md text-lg leading-8 text-coffee/70">

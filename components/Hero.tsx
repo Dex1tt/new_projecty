@@ -51,7 +51,7 @@ export function Hero() {
           </p>
           <a
             href="#menu"
-            className="mt-10 inline-flex w-full justify-center rounded-2xl bg-terracotta px-7 py-4 font-semibold text-white shadow-soft transition-colors hover:bg-terracotta-dark sm:w-auto"
+            className="mt-10 inline-flex w-full justify-center rounded-2xl bg-terracotta px-7 py-4 font-semibold text-white shadow-soft transition-[background-color,transform] hover:bg-terracotta-dark active:translate-y-px sm:w-auto"
           >
             Посмотреть меню
           </a>

@@ -2,7 +2,7 @@ import { MapPinIcon } from "./Icons";
 
 export function CafeMap() {
   return (
-    <div className="relative min-h-96 overflow-hidden rounded-[2rem] border border-coffee/10 bg-[#E8DDCD] shadow-soft">
+    <div className="relative min-h-[28rem] overflow-hidden rounded-[2rem] border border-coffee/10 bg-[#E8DDCD] shadow-soft sm:min-h-96">
       <svg
         role="img"
         aria-labelledby="map-title map-description"

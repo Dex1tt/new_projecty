@@ -11,7 +11,7 @@ const facts = [
 export function About() {
   return (
     <SectionShell id="about" title="О нас" alternate>
-      <div className="grid items-center gap-12 lg:grid-cols-12 lg:gap-14 xl:gap-20">
+      <div className="grid items-center gap-8 sm:gap-12 lg:grid-cols-12 lg:gap-14 xl:gap-20">
         <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-cream-deep shadow-soft lg:col-span-6">
           <Image
             src={aboutImage}
@@ -24,7 +24,7 @@ export function About() {
         </div>
 
         <div className="lg:col-span-6">
-          <p className="max-w-2xl font-display text-3xl leading-tight sm:text-4xl">
+          <p className="max-w-2xl font-display text-[1.75rem] leading-tight sm:text-4xl">
             Хороший кофе. Свежая выпечка. Тёплый Дом.
           </p>
 
